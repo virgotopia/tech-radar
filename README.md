@@ -1,9 +1,7 @@
 # Motivation
 
-At [Zalando](http://zalando.de), we maintain a [public Tech
-Radar](http://zalando.github.io/tech-radar/) to help our engineering teams
-align on technology choices. It is based on the [pioneering work
-by ThoughtWorks](https://www.thoughtworks.com/radar).
+This is a [personal Tech Radar](http://virgotopia.github.io/tech-radar/) to reflect one's technologic experience.
+It is based on the [pioneering work by ThoughtWorks](https://www.thoughtworks.com/radar) and [Zalando](http://zalando.de).
 
 This repository contains the code to generate the visualization:
 [`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
@@ -55,9 +53,9 @@ radar_visualization({
       label: "Some Entry",
       quadrant: 3,          // 0,1,2,3 (counting clockwise, starting from bottom right)
       ring: 2,              // 0,1,2,3 (starting from inside)
-      moved: -1             // -1 = moved out (triangle pointing down)
-                            //  0 = not moved (circle)
-                            //  1 = moved in  (triangle pointing up)
+      moved: -1             // -1 = triangle pointing down
+                            //  0 = circle
+                            //  1 = triangle pointing up
    },
     // ...
   ]
