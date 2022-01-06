@@ -3,6 +3,8 @@
 This is a [personal Tech Radar](http://virgotopia.github.io/tech-radar/) to reflect one's technologic experience.
 It is based on the [pioneering work by ThoughtWorks](https://www.thoughtworks.com/radar) and [Zalando](http://zalando.de).
 
+4 quadrants, 4 rings, 3 shapes, 2 states
+
 This repository contains the code to generate the visualization:
 [`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
 Feel free to use and adapt it for your own purposes.

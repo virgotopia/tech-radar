@@ -279,23 +279,22 @@ function radar_visualization(config) {
     // footer
     radar.append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y))
-      .text(" ● Normal proficiency")
-      .attr("xml:space", "preserve")
-      .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px");
-    radar.append("text")
-      .attr("transform", translate(footer_offset.x, footer_offset.y+15))
       .text("▲ Recently used")
       .attr("xml:space", "preserve")
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px");  
+      .style("font-size", "10px")
+    radar.append("text")
+      .attr("transform", translate(footer_offset.x, footer_offset.y+15))
+      .text(" ● Normal proficiency")
+      .attr("xml:space", "preserve")
+      .style("font-family", "Arial, Helvetica")
+      .style("font-size", "10px")
     radar.append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y+30))
       .text("▼ Not used in the last year")
       .attr("xml:space", "preserve")
       .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px"); 
-
+      .style("font-size", "10px")
 
     // legend
     var legend = radar.append("g");
@@ -416,11 +415,11 @@ function radar_visualization(config) {
     }
 
     // blip shape
-    if (d.moved > 0) {
+    if (d.shape > 0) {
       blip.append("path")
         .attr("d", "M -11,5 11,5 0,-13 z") // triangle pointing up
         .style("fill", d.color);
-    } else if (d.moved < 0) {
+    } else if (d.shape < 0) {
       blip.append("path")
         .attr("d", "M -11,-5 11,-5 0,13 z") // triangle pointing down
         .style("fill", d.color);

@@ -13,7 +13,7 @@
 
 <body>
 
-<svg id="radar"></svg>
+  <svg id="radar"></svg>
 
 <script>
 radar_visualization({
@@ -27,10 +27,10 @@ radar_visualization({
   },
   title: "Daniel SANDOR Tech Radar — 2022.01",
   quadrants: [
-    { name: "Languages & Frameworks" },
-    { name: "DevOps" },
     { name: "Crypto" },
-    { name: "Soft skills" },
+    { name: "Tools" },
+    { name: "Languages, Frameworks & Libraries" },
+    { name: "DevOps" }
   ],
   rings: [
     { name: "MASTER", color: "#93c47d" },
@@ -43,150 +43,136 @@ radar_visualization({
   //ENTRIES
   entries: [
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 0,
         "label": "Redis",
-        "link": "https://engineering.zalando.com/tags/redis.html",
-        "active": true,
-        "moved": 0
+        "link": "https://engineering.zalando.com/tags/redis.html"
       },
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 0,
-        "label": "AWS S3",
-        "active": true,
-        "moved": 0
+        "label": "AWS S3"
       },
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 0,
         "label": "PostgreSQL",
-        "link": "https://engineering.zalando.com/tags/postgresql.html",
-        "active": true,
-        "moved": 0
+        "link": "https://engineering.zalando.com/tags/postgresql.html"
       },
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 3,
-        "label": "MongoDB",
-        "active": true,
-        "moved": 0
+        "label": "MongoDB"
       },
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 0,
         "label": "Elasticsearch",
-        "link": "https://engineering.zalando.com/tags/elasticsearch.html",
-        "active": true,
-        "moved": 0
+        "link": "https://engineering.zalando.com/tags/elasticsearch.html"
+      },
+      {
+        "quadrant": 3,
+        "ring": 0,
+        "label": "Docker",
+        "link": "https://engineering.zalando.com/tags/docker.html",
+        "active": true
       },
       {
         "quadrant": 3,
         "ring": 1,
-        "label": "Presto",
-        "active": false,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Docker",
-        "link": "https://engineering.zalando.com/tags/docker.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 1,
         "label": "Kubernetes",
         "link": "https://engineering.zalando.com/tags/kubernetes.html",
-        "active": true,
-        "moved": 0
+        "active": true
       },
       {
-        "quadrant": 0,
+        "quadrant": 3,
         "ring": 2,
         "label": "OpenTracing",
-        "active": true,
-        "moved": 0
+        "active": true
       },
       {
-        "quadrant": 1,
+        "quadrant": 3,
         "ring": 0,
         "label": "Nginx",
-        "active": true,
-        "moved": 0
+        "active": true
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 2,
         "label": "GraphQL",
         "link": "https://engineering.zalando.com/tags/graphql.html",
         "active": true,
-        "moved": 1
+        "shape": 1
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 0,
         "label": "OpenAPI (Swagger)",
         "link": "https://engineering.zalando.com/tags/openapi.html",
-        "active": true,
-        "moved": 0
+        "active": true
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 3,
         "label": "Java",
         "link": "https://engineering.zalando.com/tags/java.html",
         "active": true,
-        "moved": -1
+        "shape": -1
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 0,
         "label": "TypeScript",
         "link": "https://engineering.zalando.com/tags/typescript.html",
         "active": true,
-        "moved": 1
+        "shape": 1
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 0,
         "label": "JavaScript",
         "link": "https://engineering.zalando.com/tags/javascript.html",
         "active": true,
-        "moved": 1
+        "shape": 1
       },
       {
-        "quadrant": 0,
+        "quadrant": 2,
         "ring": 3,
         "label": "Scala",
         "link": "https://engineering.zalando.com/tags/scala.html",
         "active": true,
-        "moved": -1
+        "shape": -1
       },
       {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Kafka",
-        "link": "https://engineering.zalando.com/tags/kafka.html",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "ActiveMQ",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
+        "quadrant": 1,
         "ring": 1,
-        "label": "RabbitMQ",
-        "link": "https://engineering.zalando.com/tags/rabbitmq.html",
-        "active": true,
-        "moved": 0
+        "label": "Gitpod",
+        "link": "gitpod.io",
+        "shape": 1
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "JIRA"
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "GitLab",
+        "link": "https://about.gitlab.com/",
+        "shape": 1
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Confluence",
+        "shape": -1
+      },
+      {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "BitBucket",
+        "shape": -1
       },
   ]
   //ENTRIES
@@ -213,7 +199,7 @@ The Tech Radar is a list of technologies, complemented by an assessment result, 
 </td><td>
 
 <h3>What is the purpose?</h3>
-<p>https://github.com/virgotopia/tech-radar
+<p>
 The Tech Radar is a tool to reflect my knowledge and experience in IT technologies and it's continuously evolving landscape.
 </p>
 
