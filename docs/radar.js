@@ -409,7 +409,7 @@ function radar_visualization(config) {
     var blip = d3.select(this);
 
     // blip link
-    if (!config.print_layout && d.active && d.hasOwnProperty("link")) {
+    if (!config.print_layout && d.active && Object.prototype.hasOwnProperty.call(d, "link")) {
       blip = blip.append("a")
         .attr("xlink:href", d.link);
     }
