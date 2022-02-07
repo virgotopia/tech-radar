@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Copy to a remote host via scp
+      - name: Copy folder content recursively to remote host
+        run: echo Start copying files to ${{ secrets.OVH_VPS_HOST }}...
+      #   uses: garygrossgarten/github-action-scp@release
+      #   with:
+      #     local: docs
+      #     remote: scp/directory
+      #     host: ${{ secrets.OVH_VPS_HOST }}
+      #     username: ${{ secrets.OVH_VPS_USER }}
+      #     password: ${{ secrets.OVH_VPS_PASSWORD }}
